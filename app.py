@@ -49,7 +49,7 @@ app.config['SECRET_KEY']='thisismysecretkey'
 def home():
 	if request.method=="POST":
 		run_workflow()
-
+		flash('A RDP is being triggered. Please wait a few moments!', 'success')
 		return redirect('/')
 
 	return render_template('index.html', tunnels=get_tunnels(), username=username, password=password)

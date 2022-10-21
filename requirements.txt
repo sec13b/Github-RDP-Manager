@@ -2,3 +2,4 @@ ngrok-api
 requests
 flask
 waitress
+mechanize
